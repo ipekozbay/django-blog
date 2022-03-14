@@ -14,26 +14,70 @@
     </title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="">Blogapp</a>
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">blogs</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
+    {% include 'partial/_navbar.html' %}
+    <div class="container mt-3 ">
         <div class="row">
             <div class="col-3">
-                menu
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="">programming</a>
+                    <a class="list-group-item list-group-item-action" href="">web programming</a>
+                    <a class="list-group-item list-group-item-action" href="">mobile </a>
+
+                </div>
             </div>
             <div class="col-9">
-                içerik
+                <div class="card mb-3">
+                    <div class="row" >
+                        <div class="col-md-3">
+                            <img src="{% static 'img/web.jpeg' %}" alt="" class="img-fluid" >
+                        </div>
+                        <div class="col-md-9">
+                               <div class="card-body">
+                                   <h5 class="card-title">javascript</h5>
+                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
+                               </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row" >
+                        <div class="col-md-3">
+                            <img src="{% static 'img/js.jpeg' %}" alt="" class="img-fluid" >
+                        </div>
+                        <div class="col-md-9">
+                               <div class="card-body">
+                                   <h5 class="card-title">javascript</h5>
+                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
+                               </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row" >
+                        <div class="col-md-3">
+                            <img src="{% static 'img/py.jpeg' %}" alt="" class="img-fluid" >
+                        </div>
+                        <div class="col-md-9">
+                               <div class="card-body">
+                                   <h5 class="card-title">javascript</h5>
+                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
+                               </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row" >
+                        <div class="col-md-3">
+                            <img src="{% static 'img/django2.jpeg' %}" alt="" class="img-fluid" >
+                        </div>
+                        <div class="col-md-9">
+                               <div class="card-body">
+                                   <h5 class="card-title">javascript</h5>
+                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
+                               </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
