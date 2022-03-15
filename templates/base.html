@@ -13,74 +13,9 @@
         {% block title %}{% endblock %}| blogapp
     </title>
 </head>
-<body>
-    {% include 'partial/_navbar.html' %}
-    <div class="container mt-3 ">
-        <div class="row">
-            <div class="col-3">
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action" href="">programming</a>
-                    <a class="list-group-item list-group-item-action" href="">web programming</a>
-                    <a class="list-group-item list-group-item-action" href="">mobile </a>
 
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="card mb-3">
-                    <div class="row" >
-                        <div class="col-md-3">
-                            <img src="{% static 'img/web.jpeg' %}" alt="" class="img-fluid" >
-                        </div>
-                        <div class="col-md-9">
-                               <div class="card-body">
-                                   <h5 class="card-title">javascript</h5>
-                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
-                               </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row" >
-                        <div class="col-md-3">
-                            <img src="{% static 'img/js.jpeg' %}" alt="" class="img-fluid" >
-                        </div>
-                        <div class="col-md-9">
-                               <div class="card-body">
-                                   <h5 class="card-title">javascript</h5>
-                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
-                               </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row" >
-                        <div class="col-md-3">
-                            <img src="{% static 'img/py.jpeg' %}" alt="" class="img-fluid" >
-                        </div>
-                        <div class="col-md-9">
-                               <div class="card-body">
-                                   <h5 class="card-title">javascript</h5>
-                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
-                               </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row" >
-                        <div class="col-md-3">
-                            <img src="{% static 'img/django2.jpeg' %}" alt="" class="img-fluid" >
-                        </div>
-                        <div class="col-md-9">
-                               <div class="card-body">
-                                   <h5 class="card-title">javascript</h5>
-                                   <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>
-                               </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<body>
+    {% include 'partials/_navbar.html' %}
 
     {% block content %}{% endblock %}
     <script src="{% static 'js/bootstrap.min.js'%}"></script>

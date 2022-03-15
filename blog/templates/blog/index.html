@@ -2,16 +2,30 @@
 {% load static %}
 
 {% block css_files %}
-    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
 {% endblock %}
 
 {% block title %} Homepage {% endblock %}
 {% block content %}
 
-<h1>homepage</h1>
- 
+<div class="container mt-3 ">
+    <div class="row">
+        <div class="col-3">
+            {% include 'partials/_categories.html' %}
+        </div>
+        <div class="col-9">
+            <h1>HOMEPAGE</h1>
+            <hr>
+            {% include 'blog/partials/_blog.html' %}
+            {% include 'blog/partials/_blog.html' %}
+            {% include 'blog/partials/_blog.html' %}
+            {% include 'blog/partials/_blog.html' %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block js_files %}
-    <script src="{% static 'js/base.js'%}" ></script>
+<script src="{% static 'js/base.js'%}"></script>
 {% endblock %}
