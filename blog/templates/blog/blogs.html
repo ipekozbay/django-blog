@@ -11,9 +11,13 @@
         <div class="col-9">
             <h1>alls blogs</h1>
             <hr>
+            
             {% for blog in blogs %}
-                {% include 'blog/partials/_blog.html' %}
+                {% if blog.is_active %}
+                    {% include 'blog/partials/_blog.html' %}
+                {% endif %} 
             {% endfor %}    
+
         </div>
     </div>
 </div>

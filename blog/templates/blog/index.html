@@ -18,7 +18,9 @@
             <hr>
 
             {% for blog in blogs %}
-                {% include 'blog/partials/_blog.html' %}
+                {% if blog.is_home %}
+                    {% include 'blog/partials/_blog.html' %}
+                {% endif %}
             {% endfor %}
             
         </div>
