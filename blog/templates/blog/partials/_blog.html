@@ -3,13 +3,13 @@
 <div class="card mb-3">
     <div class="row" >
         <div class="col-md-3">
-            <img src="{% static 'img/web.jpeg' %}" alt="" class="img-fluid" >
+            <img src="{% static 'img/'|add:blog.image %}" alt="" class="img-fluid" >
         </div>
         <div class="col-md-9">
                <div class="card-body">
                    <h5 class="card-title">
-                       <a href="{% url 'blog_details' 1 %}">
-                       javascript
+                       <a href="{% url 'blog_details' blog.id %}">
+                       {{ blog.title }}
                        </a>
                     </h5>
                    <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatem! </p>

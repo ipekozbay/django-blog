@@ -16,10 +16,11 @@
         <div class="col-9">
             <h1>HOMEPAGE</h1>
             <hr>
-            {% include 'blog/partials/_blog.html' %}
-            {% include 'blog/partials/_blog.html' %}
-            {% include 'blog/partials/_blog.html' %}
-            {% include 'blog/partials/_blog.html' %}
+
+            {% for blog in blogs %}
+                {% include 'blog/partials/_blog.html' %}
+            {% endfor %}
+            
         </div>
     </div>
 </div>
