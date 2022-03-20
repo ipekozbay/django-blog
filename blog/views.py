@@ -45,6 +45,16 @@ def blogs(request):
     return render(request,"blog/blogs.html",context)  
      
 def blog_details(request,id):
+    # blogs = data["blogs"]
+    # selectedBlog = None
+
+    # for blog in blogs:
+    #     if blog["id"] == id:
+    #         selectedBlog = blog
+
+    blogs = data["blogs"]
+    selectedBlog = [blog for blog in blogs if blog["id"]== id][0]
+
     return render(request,"blog/blog-details.html",{
-        "id":id
+        "blog":selectedBlog
     })
